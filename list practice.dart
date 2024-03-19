@@ -1,10 +1,11 @@
-void main(){
-  var studentsNames=["Al2i","ahmad2","A2kbar2","Ali","ahmad","Akbar","Ali","ahm2ad","Akbar2",213];
-  studentsNames[2]='Haji';
-  studentsNames[5]=3;
-  
-  print(studentsNames);
- 
- 
+void main() {
+  var studentsNames = [2,23,13,1,3,14,435,22,144444];
 
+  
+  studentsNames
+      .replaceRange(2, 3,[
+    1,
+  ]);
+  studentsNames.sort();
+  print(studentsNames);
 }
