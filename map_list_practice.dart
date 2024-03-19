@@ -1,5 +1,5 @@
 void main() {
-  var pracmap = [
+  List pracmap = [
     {
       1: '3r3',
       'af': 'afffa',
@@ -14,5 +14,5 @@ void main() {
     },
     2,3
   ];
- print(pracmap);
+ print(pracmap[0][3][2]);
 }
