@@ -14,5 +14,8 @@ void main() {
     },
     2,3
   ];
- print(pracmap[0][3][2]);
+ print(pracmap[0][3][0]['adreex']);
+ print(pracmap.isNotEmpty);
+ //print(pracmap.reversed);
+ print(pracmap.elementAt(3));
 }
