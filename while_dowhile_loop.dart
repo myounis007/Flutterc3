@@ -1,12 +1,18 @@
 import 'dart:io';
-void main(){
-  print('please enter number or list');
-var inputnum=stdin.readLineSync();
-print(inputnum);
 
-//  int a=0;
-//  while (a<10) {
-//    print(a);
-//    a++;
-// }
+void main() {
+  var isLogin = true;
+  while (isLogin == true) {
+  print('please re_enter email');
+  var email = stdin.readLineSync()!;
+  print('please re_enter password');
+  var password = stdin.readLineSync()!;
+    if (email == 'unis@gmail.com' && password == '1234ok') {
+      print('login succesful');
+      isLogin = false;
+    } else {
+      print('failed');
+      
+    }
+  }
 }
