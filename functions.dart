@@ -1,11 +1,11 @@
 void main() {
-  marksheet(name: 'unis', physics_mark: 67, math: 67, english: 89);
+  marksheet(name: 'unis',  physics_mark: 67, english: 89);
 }
 
 marksheet(
     {required String name,
     required num physics_mark,
-    required num math,
+    math=89,
     required num english}) {
   var marks_obtained = physics_mark + math + english;
 
