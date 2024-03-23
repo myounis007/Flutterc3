@@ -11,7 +11,10 @@ print(a);
 }
 
 void main() {
-studentInfo(name: 'unis');
+//studentInfo(name: 'unis');
+int age =19;
+String studentResult= age>=18 ? 'pass' :'fail' ;
+print(studentResult);
 
 
 
