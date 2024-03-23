@@ -1,24 +1,21 @@
 void main() {
-  var result= marksheet();
-  print(result);
-  //var result2= marksheet();
+  marksheet(name: 'unis', physics_mark: 67, math: 67, english: 89);
 }
 
-marksheet() {
-  
-  String name = 'unis';
-  num physics_mark = 112;
-  num math = 123;
-  num english = 232;
+marksheet(
+    {required String name,
+    required num physics_mark,
+    required num math,
+    required num english}) {
   var marks_obtained = physics_mark + math + english;
 
-  num percentage = marks_obtained / 500 * 100;
+  num percentage = marks_obtained / 300 * 100;
   print(marks_obtained);
   if (percentage > 50) {
     print('pass');
-    return name;
+    return ' $name is pass';
   } else {
     print('fail');
-    return name;
+    return '$name is fail';
   }
 }
