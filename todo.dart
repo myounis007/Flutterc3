@@ -3,7 +3,6 @@ import 'dart:io';
 List addedlist = [];
 void main() {
   print("Welcome to ToDo application");
-
   var isContinued = true;
   while (isContinued == true) {
     print("press 1 for add task");
@@ -39,7 +38,7 @@ viewTask() {
 }
 
 updateTask() {
-  print('udate your tasks');
+  print('udate your task');
   var updatedTask = stdin.readLineSync();
   addedlist.replaceRange(0, 1, [updatedTask]);
 }
