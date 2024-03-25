@@ -3,6 +3,7 @@ import 'dart:io';
 List addedlist = [];
 void main() {
   print("Welcome to ToDo application");
+   print('===========================');
   var isContinued = true;
   while (isContinued == true) {
     print("press 1 for add task");
