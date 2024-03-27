@@ -1,44 +1,27 @@
-// inheritance
+
 
 void main() {
-
-  Person obj = Person();
-  obj.age=23;
-  obj.displayinfo();
- 
-  // teacher class object
-  print('=================');
-  Teacher objt = Teacher();
-  
-  objt.displayinfo();
-  print('=================');
-Student stu= Student();
-stu.age=34;
-stu.name='student class';
-stu.displayinfo();
-
-
-
+  Person.name='unis';
+  Person.bankdetails='13123-424-4234-24232';
+  Person.displayinfo();
 
 }
 
+
 class Person {
-  
-  String? name;
-  int? age;
-  displayinfo() {
+  static String? name='unis';
+  static String bankdetails = 'daf-dfsdf-fsdf-f';
+static displayinfo() {
     print('My Name is: $name');
-    print('My age is: $age');
+    print(' bank details are : $bankdetails');
   }
 }
 
 class Teacher extends Person {
-  Teacher() {
-   
+   String? name;
+  @override
+ static  displayinfo() {
+    print('oveeriding function of person class in teacher class');
     
   }
-}
-class Student extends Teacher {
- 
-
 }
