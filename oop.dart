@@ -1,28 +1,23 @@
-import 'dart:io';
 void main() {
-  print('Object Oriented Programming in Dart');
-   print('===================================');
-  Student student1 = Student();
-  student1.name = 'unis';
-  student1.age = 24;
-  student1.projectsubmission();
- 
+Student one=Student('unis',24);
+
+
 
 
 }
 
 class Student {
-  late String name;
+  String? name;
+  int? age;
+  //types of constructor
+//default constructor of a class
+//positional or parametrized constructor
+//named constructor
 
-  late int age;
-
-  projectsubmission(){
-    print('please enter true or false');
-    var submitted= stdin.readLineSync()!;
-    if (submitted=="true") {
-      print('$name submitted the project');
-    } else {
-      print('$name ny project submit nai kiya');
-    }
+  Student(this.name,this.age){
+    print('class call ho gai');
+    print('$name is intelligint and age is $age' );
+    
   }
+ 
 }
